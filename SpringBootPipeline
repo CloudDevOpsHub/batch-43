@@ -1,0 +1,35 @@
+pipeline {
+    agent any
+    
+    environment {
+        WORK_DIR = '/var/lib/jenkins/workspace/SpringBootPipeline'
+    }
+
+    stages {
+         stage('Git clone') {
+            steps {
+            git branch: 'main', url: 'https://github.com/CloudDevOpsHub/javaspringboot-ecommerce.git'
+            } 
+         }
+        stage('Build and Package') {
+            steps {
+                dir(WORK_DIR) {
+                    sh 'mvn clean package'
+                    sh 'mvn test'
+                    sh 'mvn package'
+                }
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                dir(WORK_DIR) {
+                    sh '''
+                        fuser -k 3000/tcp || true
+                        JENKINS_NODE_COOKIE=dontKillMe nohup java -jar target/*.jar --server.port=3000 --server.address=0.0.0.0 > springboot.log 2>&1 &
+                    '''
+                }
+            }
+        }
+    }
+}
