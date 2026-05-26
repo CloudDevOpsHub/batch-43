@@ -103,3 +103,7 @@ Step 14 verify as you are able to ping target machine from ansible_master
 Ping  <Target machine IP>
 
 
+-------------
+
+ ssh-keygen
+ ssh-copy-id root@172.17.0.3
