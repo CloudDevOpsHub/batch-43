@@ -42,3 +42,25 @@ xample 2
 echo "Hello there"
 echo "My name is $(whoami)"
 echo "Nice to meet you"
+
+
+----------
+
+Example Monitoring script  
+
+#!/bin/bash  
+echo "This is a shell script"
+echo "the hostname of this machine is "
+hostname 
+hostname -i
+ps
+echo "memory used in the machine "
+free
+echo "disk used in the machine "
+df -h
+echo "the above information from the machine"  
+SOMEVAR='text stuff'  
+echo "$SOMEVAR"
+
+Expected Output 
+
