@@ -33,3 +33,12 @@ ls
 echo "I am done running ls command"  
 SOMEVAR='Neetesh is expaining first the script'  
 echo "$SOMEVAR"
+
+-----------------
+
+
+xample 2
+#!/bin/bash 
+echo "Hello there"
+echo "My name is $(whoami)"
+echo "Nice to meet you"
