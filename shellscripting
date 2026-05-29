@@ -1,0 +1,35 @@
+vi vikas.sh
+i
+
+
+
+
+#! bin/bash
+pwd
+ls -l
+df -h
+free
+touch mayuresh
+
+ecs : wq enter 
+
+chmod +x vikas.sh
+
+./vikas.sh
+
+
+
+
+set of linux command .sh and run 
+
+
+
+1
+
+
+#!/bin/bash  
+echo "This is my shell script with batch-43"  
+ls
+echo "I am done running ls command"  
+SOMEVAR='Neetesh is expaining first the script'  
+echo "$SOMEVAR"
