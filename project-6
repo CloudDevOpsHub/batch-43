@@ -19,7 +19,8 @@ Step-4
 
 sudo apt install poppler-utils -y
 
-git clone https://github.com/CloudDevOpsHub/ATS-Multi-Cloud-AI-Project.git
+git clone https://github.com/CloudDevOpsHub/ATS-Multi-Cloud-AI-Project.git        removed 
+git clone https://github.com/CloudDevOpsHub/Application-Tracking-System.git    
 
 cd 
 
