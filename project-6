@@ -19,4 +19,19 @@ Step-4
 
 sudo apt install poppler-utils -y
 
+git clone https://github.com/CloudDevOpsHub/ATS-Multi-Cloud-AI-Project.git
+
+Step-2  cd Application-Tracking-System
+
+Step-3 Set Up a Virtual Environment
+ python3 -m venv venv
+ source venv/bin/activate
+
+Step-4 Install Project Dependencies
+ pip install --upgrade pip
+ pip install -r requirements.txt
+ pip install google-generativeai
+
+
+
 
