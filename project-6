@@ -22,7 +22,7 @@ sudo apt install poppler-utils -y
 git clone https://github.com/CloudDevOpsHub/ATS-Multi-Cloud-AI-Project.git        removed 
 git clone https://github.com/CloudDevOpsHub/Application-Tracking-System.git    
 
-cd 
+cd Application-Tracking-System
 
 Step-3 Set Up a Virtual Environment
  python3 -m venv venv
