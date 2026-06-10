@@ -77,3 +77,29 @@ eksctl create cluster \
 --nodes-max 3 \
 --managed 
 
+or 
+
+Create Cluster using eksctl
+eksctl create cluster \
+--name mlops-cluster \
+--region ap-south-1 \
+--nodegroup-name mlops-nodes \
+--node-type m7i-flex.large \
+--nodes 1 \
+--nodes-min 1 \
+--nodes-max 2 \
+--managed 
+
+
+kubectl apply -f k8s-deploy.yml
+kubectl get deployments
+kubectl get pods
+kubectl get svc
+
+
+
+
+then delete and verify 
+eksctl delete cluster --name mlops-cluster --region ap-south-1
+https://ap-south-1.console.aws.amazon.com/eks/clusters?region=ap-south-1
+https://ap-south-1.console.aws.amazon.com/cloudformation/home?region=ap-south-1#/stacks?filteringText=&filteringStatus=active&viewNested=true
