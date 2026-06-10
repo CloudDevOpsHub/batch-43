@@ -19,3 +19,50 @@ pip install --upgrade pip
 pip install -r requirements.txt
 
 python train.py
+
+uvicorn main:app --host 0.0.0.0 --port 8000
+
+
+install docker 
+
+1.1: Install Docker
+sudo apt update
+sudo apt install -y docker.io
+sudo systemctl start docker
+sudo systemctl enable docker
+sudo usermod -aG docker $USER
+newgrp docker
+docker -v
+
+
+curl -LO https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl
+chmod +x kubectl
+sudo mv kubectl /usr/local/bin/
+kubectl version --client
+
+
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+sudo apt install -y unzip
+unzip awscliv2.zip
+sudo ./aws/install
+aws --version
+
+curl -sLO https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_Linux_amd64.tar.gz
+tar -xzf eksctl_Linux_amd64.tar.gz
+sudo mv eksctl /usr/local/bin/
+eksctl version
+
+
+docker build -t it-career-api .
+Check:
+docker images
+
+
+12.1: Login to DockerHub
+docker login
+12.2: Tag Image
+docker tag it-career-api vikas4cloud/it-career-api:latest
+12.3: Push Image
+docker push vikas4cloud/it-career-api:latest
+ 
+
