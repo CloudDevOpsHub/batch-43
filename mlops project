@@ -64,5 +64,16 @@ docker login
 docker tag it-career-api vikas4cloud/it-career-api:latest
 12.3: Push Image
 docker push vikas4cloud/it-career-api:latest
- 
+
+
+
+eksctl create cluster \
+--name mlops-cluster \
+--region ap-south-1 \
+--nodegroup-name mlops-nodes \
+--node-type t3.medium \
+--nodes 2 \
+--nodes-min 2 \
+--nodes-max 3 \
+--managed 
 
