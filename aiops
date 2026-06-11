@@ -1,0 +1,20 @@
+Step 1: Download the Code 
+ https://github.com/CloudDevOpsHub/AIOPS/tree/main 
+
+Step 2: Download Python
+sudo apt update && sudo apt install python3 python3-pip python3-venv -y
+
+
+Step 3: Create & Activate the virtual environment 
+python3 -m venv venv
+source venv/bin/activate
+
+Step 4: Install dependencies
+
+pip install pandas numpy scikit-learn tabulate
+pip install pandas numpy scikit-learn tabulate matplotlib Colorama
+
+Step 5: Run the Python AI Scripts
+
+python simple_log_analysis.py 
+python aiops_log_analysis.py
