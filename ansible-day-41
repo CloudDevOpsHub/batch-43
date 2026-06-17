@@ -26,7 +26,7 @@ Step 4 go to ansible_master container  update the ubuntu and install some depend
 docker exec -it ansible_master bash
 apt update
 apt install python-is-python3 vim iputils-ping openssh-client -y
-                           Geographical area 6 city 44
+                           Geographical area 5 city 43
 apt install software-properties-common
 add-apt-repository --yes --update ppa:ansible/ansible
 apt install ansible
